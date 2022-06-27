@@ -188,16 +188,16 @@ body, html {
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="images/moonbounce.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Moonbouce VPN is built on our Shapeshifter technology which is an easy to implement pluggable transport provider.  Our Shapeshifting technology was created to disguise your internet traffic so it doesn’t get filtered. With our technology your traffic won’t be blocked even in the most restrictive internet censoring.">
+      <img src="images/moonbounce.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Moonbouce VPN is built on our Shapeshifter technology which is an easy to implement pluggable transport provider.  Our Shapeshifting technology was created to disguise your internet traffic so it doesn’t get filtered. With our technology your traffic won’t be blocked even in the most restrictive internet censoring." href="https://github.com/OperatorFoundation/Moonbounce">
     </div>
     <div class="w3-col l3 m6">
-      <img src="images/canary.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Canary is a tool for capturing and processing network traffic from Pluggable Transports for analysis in AdversaryLab. Canary uses AdversaryLabClientSwift for low-level packet capture and adds high-level orchestration of running the tests for different Pluggable Transports, including running each Pluggable Transport and handling configuration files.">
+      <img src="images/canary.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Canary is a tool for capturing and processing network traffic from Pluggable Transports for analysis in AdversaryLab. Canary uses AdversaryLabClientSwift for low-level packet capture and adds high-level orchestration of running the tests for different Pluggable Transports, including running each Pluggable Transport and handling configuration files." href="https://github.com/OperatorFoundation/Canary">
     </div>
     <div class="w3-col l3 m6">
-      <img src="images/shapeshifter.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Shapeshifter is for App and Tool Developers that want to circumvent internet censorship so their work can be globally accessible.  Free technology for VPN providers and developers to implement into existing tools.">
+      <img src="images/shapeshifter.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Shapeshifter is for App and Tool Developers that want to circumvent internet censorship so their work can be globally accessible.  Free technology for VPN providers and developers to implement into existing tools." href="https://github.com/OperatorFoundation/Shapeshifter-Swift-Transports">
     </div>
     <div class="w3-col l3 m6">
-      <img src="images/adversarylab.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Adversary Lab is a service that analyzes captured network traffic to extract statistical properties. Using this analysis, filtering rules can be synthesized to block sampled traffic.">
+      <img src="images/adversarylab.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Adversary Lab is a service that analyzes captured network traffic to extract statistical properties. Using this analysis, filtering rules can be synthesized to block sampled traffic." href="https://github.com/OperatorFoundation/">
     </div>
   </div>
 
@@ -285,7 +285,7 @@ function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.title;
+  captionText.innerHTML = element.title + "<a href=\"" + element.href + "\">link</a>";
 }
 
 
