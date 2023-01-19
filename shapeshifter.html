@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<title>Operator Foundation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Quicksand', helvetica, arial, sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/mac.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/logo.jpg" height="40" width="40"></a>
+    <div style="margin-top:10px; font-size:26px;float:left;">operator</div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"> BOARD</a>
+      <a href="#work" class="w3-bar-item w3-button">PROJECTS</a>
+      <a href="https://medium.com/operatorfoundation" class="w3-bar-item w3-button">NEWS</a>
+     <!-- <a href="funding.html" class="w3-bar-item w3-button">FUNDING</a> -->
+      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()">ABOUT</a>
+  <a href="#team" onclick="w3_close()">BOARD</a>
+  <a href="#work" onclick="w3_close()">PROJECTS</a>
+  <a href="https://medium.com/operatorfoundation" onclick="w3_close()">NEWS</a>
+<!-- <a href="funding.html" class="w3-bar-item w3-button">FUNDING</a> -->
+  <a href="#contact" onclick="w3_close()">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-padding-xxlarge w3-text-white">
+    <span class="w3-jumbo">Operator Foundation is a nonprofit</span><br>
+
+    <span class="w3-large w3-hide-small">Operator makes useable tools to help people around the world with censorship, security, and privacy.</span>
+    <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NEJ8AS6LEPAGE" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">DONATE TO OPERATOR</a></p>
+  </div> 
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-128" id="about">
+  <h3 class="w3-center">ABOUT THE NON-PROFIT</h3>
+  <p class="w3-center w3-large">Operator is founded on these essential pillars</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <img src="images/people.jpg" height="150" width="200">
+      <p class="w3-large">People</p>
+      <p>Our tools help real people. We design our projects for specific communities through collaboration.
+</p>
+    </div>
+    <div class="w3-third">
+      <img src="images/technology.jpg" height="150" width="200">
+      <p class="w3-large">Technology</p>
+      <p>We create technology to solve human problems. We write code, make apps, configure servers, and build hardware.</p>
+    </div>
+    <div class="w3-third">
+      <img src="images/design.jpg" height="150" width="200">
+      <p class="w3-large">Design</p>
+      <p>Everything we do is designed to be usable and beautiful.  We integrate user-centered design in all of our products.</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Us Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>About Us</h3>
+      <p>The Operator Foundation was founded in 2014 in Austin, Texas. Our purpose is to promote internet freedom, open communication and global internet security through technology development, deployment, and education. We develop technologies to facilitate access to credible and relevant information and open communication around the world.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/world.jpg" alt="Buildings" >
+    </div>
+  </div>
+</div>
+
+<!-- Board Section -->
+<div class="w3-container w3-padding-128" id="team">
+  <h3 class="w3-center">BOARD</h3>
+  <p class="w3-center w3-large">Operator Foundation board members</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-third l3 m6 w3-margin-bottom">
+      <div>
+        <img src="images/BrandonSquare.png" alt="Dr. Brandon Wiley" style="width:100%">
+        <div class="w3-container">
+          <h3>Brandon Wiley</h3>
+          <p class="w3-opacity">President</p>
+          <p>Brandon has worked for the last ten years in open source and peer-to-peer software, both in community projects and tech startups.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third l3 m6 w3-margin-bottom">
+      <div>
+        <img src="images/CorieSquare.jpg" alt="Corie" style="width:100%">
+        <div class="w3-container">
+          <h3>Corie Johnson</h3>
+          <p class="w3-opacity">Vice President</p>
+          <p>Corie is an educator and designer. She has experience designing for companies in the United States and abroad.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third l3 m6 w3-margin-bottom">
+      <div>
+        <img src="images/Donaldsquare.jpg" alt="Donald" style="width:100%">
+        <div class="w3-container">
+          <h3>Donald Jackson</h3>
+          <p class="w3-opacity">Secretary </p>
+          <p>Donald is a researcher, urban economist, and urban planner with specializations in sustainable economic development and strategic planning.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third l3 m6 w3-margin-bottom">
+      <div>
+        <img src="images/steven-hazel-operator.jpg" alt="Steve" style="width:100%">
+        <div class="w3-container">
+          <h3>Steven Hazel</h3>
+          <p class="w3-opacity">Treasurer </p>
+          <p>Steven Hazel is an engineer and entrepreneur from San Francisco, California. One of the founders of the peer-to-peer movement, he has worked at companies such as AudioGalaxy, Grouper, FolderShare, and ByteTaxi. Former CTO of testing technology company SauceLabs, Steve is now contributing his technology and business acumen to Operator Foundation as a board member and Treasurer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slice Section "Jobs" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <a href="images/990-2020.pdf">View our 2020 IRS form 990 (federal tax return for non-profit organizations)</a> - 
+  &nbsp
+  <a href="images/990-2019.pdf">2019</a>&nbsp
+  <a href="images/990-2018.pdf">2018</a>&nbsp
+  <a href="images/990-2017.pdf">2017</a>&nbsp
+
+  <div class="w3-quarter">
+  
+  <!--  <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings  -->
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="w3-container w3-padding-128" id="work">
+  <h3 class="w3-center">OUR PROJECTS</h3>
+  <p class="w3-center w3-large">Take a look at what we work on.</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="images/moonbounce.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Moonbouce VPN is built on our Shapeshifter technology which is an easy to implement pluggable transport provider.  Our Shapeshifting technology was created to disguise your internet traffic so it doesn’t get filtered. With our technology your traffic won’t be blocked even in the most restrictive internet censoring.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/canary.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Canary is a tool for capturing and processing network traffic from Pluggable Transports for analysis in AdversaryLab. Canary uses AdversaryLabClientSwift for low-level packet capture and adds high-level orchestration of running the tests for different Pluggable Transports, including running each Pluggable Transport and handling configuration files.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/shapeshifter.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Shapeshifter is for App and Tool Developers that want to circumvent internet censorship so their work can be globally accessible.  Free technology for VPN providers and developers to implement into existing tools.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/adversarylab.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" title="Adversary Lab is a service that analyzes captured network traffic to extract statistical properties. Using this analysis, filtering rules can be synthesized to block sampled traffic.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+   <!--
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  -->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-128 w3-light-grey" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">We work with specific communities of users to develop technologies that enable security, privacy, and open access. If you need help please contact us about your specific needs.  Operator Foundation is a grant funded nonprofit, if you are a funding agency interested in security, privacy, and open access please contact us about opportunities for collaboration.</p>
+  <p class="w3-center w3-large"><a href="mailto:contact@operatorfoundation.org" target="_top">contact@operatorfoundation.org</a></p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="contactcenter">
+    <!-- <div class="w3-half">
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            </i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NEJ8AS6LEPAGE" class="w3-button">DONATE TO THE OPERATOR FOUNDATION</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/OperatorFoundation/"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+    <a href="https://www.linkedin.com/company-beta/17943467/"><i class="fa fa-linkedin w3-hover-text-blue"></i></a>
+    <a href="https://github.com/OperatorFoundation"><i class="fa fa-github w3-hover-text-purple"></i></a>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.title;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+</script>
+</body>
+</html>
